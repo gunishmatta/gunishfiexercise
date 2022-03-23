@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FiAndroidExercise</string>
+    <string name="first_of_the_few_steps">First of the few steps to set you up with your bank account</string>
+    <string name="pan_number">Pan Number</string>
+    <string name="birthdate">BIRTHDATE</string>
+    <string name="next">Next</string>
+</resources>
