@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.register.RegisterActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/logo"
@@ -73,6 +73,7 @@
         app:layout_constraintEnd_toStartOf="@id/month_value"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/birth_date_label"
+        android:inputType="number"
 
         />
 
@@ -84,6 +85,7 @@
         app:layout_constraintEnd_toStartOf="@id/year_value"
         app:layout_constraintStart_toEndOf="@id/day_value"
         app:layout_constraintTop_toBottomOf="@id/birth_date_label"
+        android:inputType="number"
         />
 
     <EditText
@@ -94,6 +96,7 @@
         app:layout_constraintStart_toEndOf="@id/month_value"
         app:layout_constraintTop_toBottomOf="@id/birth_date_label"
         app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="number"
         />
 
     <Button
