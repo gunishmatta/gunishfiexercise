@@ -4,4 +4,6 @@
     <string name="pan_number">Pan Number</string>
     <string name="birthdate">BIRTHDATE</string>
     <string name="next">Next</string>
+    <string name="pan_input_error">Please enter a valid PAN number</string>
+    <string name="birthdate_input_error">Please enter a valid birth date</string>
 </resources>

@@ -20,6 +20,7 @@ class InputFilterMinMax: InputFilter {
         try
         {
             val input = Integer.parseInt(dest.toString() + source.toString())
+
             if (isInRange(min, max, input))
                 return null
         }
