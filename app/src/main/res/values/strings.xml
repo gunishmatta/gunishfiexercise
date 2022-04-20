@@ -6,4 +6,7 @@
     <string name="next">Next</string>
     <string name="pan_input_error">Please enter a valid PAN number</string>
     <string name="birthdate_input_error">Please enter a valid birth date</string>
+    <string name="logo_text">S.</string>
+    <string name="providing_pan_amp_date_of_birth_helps_us_find"><![CDATA[Providing PAN & Date of Birth helps us find and fetch your KYC from a central registry by the Government of India]]></string>
+    <string name="i_don_t_have_a_pan">I don\'t have a PAN</string>
 </resources>

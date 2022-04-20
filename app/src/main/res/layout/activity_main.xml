@@ -6,12 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ui.register.RegisterActivity">
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <TextView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#FF5733"
+        android:textStyle="bold"
+        android:text="@string/logo_text"
+        android:textSize="30sp"
+        android:layout_margin="16dp"
+        android:padding="16dp"
 
         />
 
@@ -25,7 +31,9 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo" />
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:layout_margin="16dp"
+        />
 
     <TextView
         android:id="@+id/pan_number_label"
@@ -36,7 +44,6 @@
         android:text="@string/pan_number"
         android:textColor="@color/black"
         android:textSize="16sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/header_text" />
@@ -48,7 +55,12 @@
         android:layout_margin="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pan_number_label" />
+        app:layout_constraintTop_toBottomOf="@id/pan_number_label"
+        android:background="@drawable/edit_text_border_blue"
+        android:padding="16dp"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        />
 
 
     <TextView
@@ -60,7 +72,6 @@
         android:text="@string/birthdate"
         android:textColor="@color/black"
         android:textSize="16sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/pan_value" />
@@ -74,6 +85,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/birth_date_label"
         android:inputType="number"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_border_purple"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
 
         />
 
@@ -86,6 +101,11 @@
         app:layout_constraintStart_toEndOf="@id/day_value"
         app:layout_constraintTop_toBottomOf="@id/birth_date_label"
         android:inputType="number"
+        android:background="@drawable/edit_text_border_purple"
+        android:padding="16dp"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+
         />
 
     <EditText
@@ -97,13 +117,29 @@
         app:layout_constraintTop_toBottomOf="@id/birth_date_label"
         app:layout_constraintEnd_toEndOf="parent"
         android:inputType="number"
+        android:maxLines="1"
         android:maxLength="4"
+        android:background="@drawable/edit_text_border_purple"
+        android:padding="16dp"
         />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/year_value"
+        app:layout_constraintBottom_toTopOf="@id/next_button"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/providing_pan_amp_date_of_birth_helps_us_find"
+        android:padding="16dp"
+        />
+
 
     <Button
         android:id="@+id/next_button"
         app:layout_constraintTop_toBottomOf="@id/day_value"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/no_pan_button"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp"
         android:padding="16dp"
@@ -111,6 +147,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/next"
+        />
+
+    <TextView
+        android:id="@+id/no_pan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/next_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/i_don_t_have_a_pan"
+        android:textSize="20sp"
+        android:textColor="#8126DA"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
